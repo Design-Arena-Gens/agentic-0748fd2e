@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+html, body { padding: 0; margin: 0; height: 100%; background: #0b0f1a; color: #f3f5f7; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, Apple Color Emoji, Segoe UI Emoji; }
+
+:root {
+  --accent: #f59e0b;
+  --accent2: #06b6d4;
+  --danger: #ef4444;
+  --ok: #22c55e;
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.h1 { font-size: 20px; font-weight: 700; letter-spacing: .4px; color: #e5e7eb; }
+.small { opacity: .7; font-size: 12px; }
+.card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 16px 0; }
+.card { border: 1px solid #1f2937; background: #0f172a; border-radius: 12px; padding: 16px; cursor: pointer; transition: transform .1s ease, border-color .15s ease; }
+.card:hover { transform: translateY(-2px); border-color: var(--accent2); }
+.card h3 { margin: 0 0 8px; }
+.row { display: flex; gap: 12px; align-items: center; }
+.badge { border-radius: 999px; padding: 4px 10px; font-size: 12px; border: 1px solid #1f2937; background: #0b1220; }
+.hp { height: 12px; background: #111827; border-radius: 999px; overflow: hidden; border: 1px solid #1f2937; }
+.hp-fill { height: 100%; background: linear-gradient(90deg, var(--ok), #a3e635); }
+.cooldowns { display: flex; gap: 6px; }
+.cd { font-size: 12px; padding: 2px 6px; border-radius: 6px; border: 1px solid #1f2937; background: #0b1220; min-width: 28px; text-align: center; }
+.arena-wrap { display: flex; gap: 16px; }
+.sidepanel { width: 260px; }
+.canvas-wrap { position: relative; border: 1px solid #1f2937; background: #0a1020; border-radius: 12px; overflow: hidden; }
+.caption { margin-top: 8px; opacity: .8; font-size: 12px; }
+.button { background: var(--accent2); color: #001015; border: none; padding: 10px 14px; border-radius: 8px; cursor: pointer; font-weight: 700; }
+.button.secondary { background: #0b1220; color: #cbd5e1; border: 1px solid #1f2937; }
+kbd { background: #0b1220; border: 1px solid #1f2937; border-bottom-width: 2px; border-right-width: 2px; padding: 2px 6px; border-radius: 6px; font-size: 12px; }
+.footer { margin-top: 12px; opacity: .7; font-size: 12px; }
